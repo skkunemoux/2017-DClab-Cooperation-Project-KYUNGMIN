@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Painter</title>
+	<style type="text/css">
+		canvas{border: 1px solid black};
+	</style>
+</head>
+<body>
+	<div style="position: relative;">
+		<canvas id="canvas" width="500" height="500"
+			style="left: 0;top: 0;z-index: 0;"></canvas>		
+		<canvas id="canvas2" width="500" height="500"
+			style="left: 500px;top: 0;z-index: 1;"></canvas>
+	</div>
+
+	<script src="canvas.js"></script>
+	<script src="canvas2.js"></script>
+	<script src="jscolor.js"></script>
+	<script src="jscolor.min.js"></script>
+	<p>Color picker:  <input value="000000" class="jscolor {hash:true} {width:243, height:150, position:relative,
+    borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666'}" onchange="send(this.jscolor)">
+
+	<p>Color picker2:  <input value="000000" class="jscolor {hash:true} {width:243, height:150, position:'right',
+    borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666'}" onchange="send2(this.jscolor)">
+
+</body>
+</html>
